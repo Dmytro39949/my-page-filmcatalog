@@ -3,7 +3,8 @@
 $post_id = isset($_GET['post_id']) ? $_GET['post_id'] : 0;
 if (!is_numeric($post_id)) exit('Некоректний ідентифікатор запису');
 $post = get_post_by_id($post_id);
-$episodes = $post ? get_episodes_by_post_id($post_id) : [];
+$hide_episodes = $post && (int)$post['id'] === 13;
+$episodes = $post && !$hide_episodes ? get_episodes_by_post_id($post_id) : [];
 ?>
 <?php if (!$post): ?>
     <div class="container py-5"><div class="alert alert-danger">Запис не знайдено.</div></div>

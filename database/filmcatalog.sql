@@ -1,12 +1,8 @@
-SET SQL_MODE = 'NO_AUTO_VALUE_ON_ZERO';
+﻿SET SQL_MODE = 'NO_AUTO_VALUE_ON_ZERO';
 
 START TRANSACTION;
 
 SET time_zone = '+00:00';
-
-CREATE DATABASE IF NOT EXISTS `filmcatalog` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-
-USE `filmcatalog`;
 
 DROP TABLE IF EXISTS `news`;
 
@@ -103,3 +99,5 @@ INSERT INTO `episodes` (`id`,`post_id`,`season_number`,`episode_number`,`title`,
 (5,13,1,5,'Білий кролик','Пошук відповідей на острові стає дедалі небезпечнішим і дивнішим.','https://www.youtube.com/embed/F7_dkEkE50g');
 
 COMMIT;
+
+

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#121936"/>
+      <stop offset="1" stop-color="#0b1020"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="900" fill="url(#g)"/>
+  <rect x="54" y="64" width="492" height="772" rx="36" fill="none" stroke="#f4c430" stroke-width="8" opacity=".55"/>
+  <text x="300" y="430" text-anchor="middle" fill="#f4c430" font-size="54" font-family="Arial" font-weight="700">MovieSpace</text>
+  <text x="300" y="500" text-anchor="middle" fill="#aeb7d8" font-size="30" font-family="Arial">Немає зображення</text>
+</svg>
